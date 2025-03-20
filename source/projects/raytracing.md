@@ -33,6 +33,6 @@ galleryImages:
   - url: /projectMedia/raytracing/refraction.jpg
   - url: /projectMedia/raytracing/blinnphong.png
   - url: /projectMedia/raytracing/reflekcija.png
-video: /projectMedia/raytracing/sve.jpg
+video: /projectMedia/raytracing/sve.JPG
 ---
 # Raytracing project page
