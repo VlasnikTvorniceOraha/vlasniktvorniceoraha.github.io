@@ -1,7 +1,10 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
 	eleventyConfig.addPlugin(syntaxHighlight);
+    const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
     eleventyConfig.addFilter("uppercase", function (value) {
         return value.toUpperCase();
@@ -29,4 +32,8 @@ module.exports = function (eleventyConfig) {
         },
     };
 };
+
+module.exports.config = {
+	pathPrefix: "docs",
+}
 
