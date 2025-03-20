@@ -25,7 +25,7 @@ module.exports = async function (eleventyConfig) {
     return {
         dir: {
           input: "source",    // Source files
-          output: "docs",  // Output folder, now docs for GH pages
+          output: "docs",  // Output folder, now docs for GH pagess
           includes: "_includes",  // Template includes folder
           data: "_data",   // Global data folder
         },
