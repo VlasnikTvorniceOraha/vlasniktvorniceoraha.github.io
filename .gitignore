@@ -1,2 +1,4 @@
 node_modules/
+!node_modules/flickity/dist/
+!node_modules/leaflet/dist/
 .env
