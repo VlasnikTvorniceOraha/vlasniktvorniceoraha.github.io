@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/project.css">
+    
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <main>
+        
+<link rel="stylesheet" href="/node_modules/flickity/dist/flickity.min.css">
+<script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+<script type="module" src="/js/gallery.js"></script>
+<div class="project-container">
+    <div class="side left">
+    </div>
+    <div class="middle">
+        <div class="naslov">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="gallery">
+            
+                <div class="gallery-item">
+                    <img src=/images/galaksijaPhotoshop.png alt="Main image">
+                </div>
+            
+            
+        </div>
+        <p class="description">I wanted to make a portfolio page for a while and finally decided to turn it into a mini project. The page is hosted on Github pages and is relatively simple (for now). It simply hosts my projects and images of my projects. It is currently only in english though I do plan on localizing it to Croatian (localization is annoying).</p>
+        <p class="techs-used">The site was made with Eleventy and Nunjucks. Most of the info is written in JSONs and markdown files and some minimal HTML is written for each page. Eleventy uses templates for most pages so it&#39;s really easy to reuse HTML pages. CSS is a mess and I really do not like it but I decided to go with a darker, space theme. The background of most images was taken in Space Engine which is a space simulator with some really nice graphics and customizability. The gallery was made using Flickity which is a pretty cool library for making these types of carousel galleries. The interactive map is something I wanted to do from the start but it seemed too complicated. Turns out with the helpful Leaflet.js library, photoshop and some other tools it was actually pretty simple to pull off and I think it looks pretty cool. It would be a lot nicer with some more projects and clusters but uhh I&#39;m getting there alright.</p>
+        <div class="technologies">
+            
+            <img src="/images/svg/js.svg" alt="Javascript" class="tech-icon">
+            
+            <img src="/images/svg/nunjucks.svg" alt="Nunjucks" class="tech-icon">
+            
+            <img src="/images/svg/eleventy.svg" alt="Eleventy" class="tech-icon">
+            
+        </div>
+        <p class="role">I wanted to use a new framework outside of just HTML/CSS/JS to make this page. I decided with a static site generator, Eleventy as it seemed fairly powerful and fit what I needed. It worked pretty well and there are some interesting plugins for it. The interactive map is made with Leaflet.js and I plan on maybe adding some other interesting things.</p>
+        <div class = "state">
+            <h2>Current state</h2>
+            <ol class="list">
+                <li>Status: Functional</li>
+                <li>Developed for: Personal</li>
+                <li>Learned from project: Eleventy, Nunjucks, some parts of CSS</li>
+                <li>Problems?: I can&#39;t tell if I like it or not, I like the map though</li>
+                <li>My opinion: Turns out I was just typing more than coding, but it functions I guess?</li>
+                
+                <li>Github: Private</li>
+                
+                
+            </ol>
+        </div>
+        <div class="gumb">
+            <h2><a href="/">Return</a></h2>
+        </div>
+    </div>
+    <div class="side right">
+    </div>
+</div>
+
+    </main>
+    <footer>
+    <p>&copy; Jakša Fajs - Portfolio</p>
+</footer>
+</body>
+</html>

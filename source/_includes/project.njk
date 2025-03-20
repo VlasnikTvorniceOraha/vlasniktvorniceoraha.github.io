@@ -1,0 +1,67 @@
+---
+title: Single project page
+pageStyle: /css/project.css
+---
+{% extends "base.njk" %}
+{% block content %}
+<link rel="stylesheet" href="/node_modules/flickity/dist/flickity.min.css">
+<script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+<script type="module" src="/js/gallery.js"></script>
+<div class="project-container">
+    <div class="side left">
+    </div>
+    <div class="middle">
+        <div class="naslov">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="gallery">
+            {%if usesVideo%}
+                <div class="gallery-item">
+                    <video controls>
+                        <source src={{video}} type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            {% else %}
+                <div class="gallery-item">
+                    <img src={{video}} alt="Main image">
+                </div>
+            {% endif %}
+            {% for image in galleryImages %}
+            <div class="gallery-item">
+                <img src={{image.url}} alt="Gallery image">
+            </div>
+            {% endfor %}
+        </div>
+        <p class="description">{{description}}</p>
+        <p class="techs-used">{{techsUsed}}</p>
+        <div class="technologies">
+            {% for tech in technologies %}
+            <img src="/images/svg/{{ tech.icon }}.svg" alt="{{ tech.name }}" class="tech-icon">
+            {% endfor %}
+        </div>
+        <p class="role">{{role}}</p>
+        <div class = "state">
+            <h2>Current state</h2>
+            <ol class="list">
+                <li>Status: {{status}}</li>
+                <li>Developed for: {{for}}</li>
+                <li>Learned from project: {{learned}}</li>
+                <li>Problems?: {{problems}}</li>
+                <li>My opinion: {{opinion}}</li>
+                {%if private%}
+                <li>Github: Private</li>
+                {% else %}
+                <li>Github: <a href={{git}} >{{git}}</a></li>
+                {% endif %}
+                
+            </ol>
+        </div>
+        <div class="gumb">
+            <h2><a href="/">Return</a></h2>
+        </div>
+    </div>
+    <div class="side right">
+    </div>
+</div>
+{% endblock %}

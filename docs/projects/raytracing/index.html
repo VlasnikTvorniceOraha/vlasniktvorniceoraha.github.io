@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/project.css">
+    
+    <title>Raytracing in Unity</title>
+</head>
+<body>
+    
+    <main>
+        
+<link rel="stylesheet" href="/node_modules/flickity/dist/flickity.min.css">
+<script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+<script type="module" src="/js/gallery.js"></script>
+<div class="project-container">
+    <div class="side left">
+    </div>
+    <div class="middle">
+        <div class="naslov">
+            <h1>Raytracing in Unity</h1>
+        </div>
+        <div class="gallery">
+            
+                <div class="gallery-item">
+                    <img src=/projectMedia/raytracing/sve.jpg alt="Main image">
+                </div>
+            
+            
+            <div class="gallery-item">
+                <img src=/projectMedia/raytracing/ambient2.png alt="Gallery image">
+            </div>
+            
+            <div class="gallery-item">
+                <img src=/projectMedia/raytracing/difuse.png alt="Gallery image">
+            </div>
+            
+            <div class="gallery-item">
+                <img src=/projectMedia/raytracing/sjene.png alt="Gallery image">
+            </div>
+            
+            <div class="gallery-item">
+                <img src=/projectMedia/raytracing/refraction.jpg alt="Gallery image">
+            </div>
+            
+            <div class="gallery-item">
+                <img src=/projectMedia/raytracing/blinnphong.png alt="Gallery image">
+            </div>
+            
+            <div class="gallery-item">
+                <img src=/projectMedia/raytracing/reflekcija.png alt="Gallery image">
+            </div>
+            
+        </div>
+        <p class="description">A simple implementation of Phong shading, Blinn-Phong shading, simple shadows and reflection and refraction with raytracing done with Compute shaders in Unity. The user can disable and enable different parts of shading in the Unity editor. The shader traces rays based on the objects in the scene and determines their colour depending on what parts of the shader are on and the number of bounces/refractions.</p>
+        <p class="techs-used">This project was made in Unity 3D with Compute shaders. The shader calculates and overlays the camera image with the one it renders. Calculations are made for each pixel on the screen. The user has free movement but should not move objects around. The materials for the objects are all adjustable and all information is sent to the GPU using relevant streams. The project uses direct HLSL code and not Shadergraph (I didn&#39;t know how to use it at the time).</p>
+        <div class="technologies">
+            
+            <img src="/images/svg/unity.svg" alt="Unity" class="tech-icon">
+            
+            <img src="/images/svg/3d.svg" alt="3D" class="tech-icon">
+            
+            <img src="/images/svg/csharp.svg" alt="C#" class="tech-icon">
+            
+            <img src="/images/svg/hlsl.svg" alt="HLSL" class="tech-icon">
+            
+        </div>
+        <p class="role">This was a project that was ment to modernize an existing laboratory exercise at FER. The idea was to rewrite most of the old .NET/Java code and port it into Unity and most importantly, improve rendering performance. This was done by using compute shaders which run lots of parallel threads strictly on the GPU and therefore improve pixel by pixel calculations.</p>
+        <div class = "state">
+            <h2>Current state</h2>
+            <ol class="list">
+                <li>Status: Completed</li>
+                <li>Developed for: College</li>
+                <li>Learned from project: HLSL, Shaders, Compute shaders</li>
+                <li>Problems?: To this day I&#39;m not sure if ray refraction works properly but it looks good so it&#39;s fine</li>
+                <li>My opinion: Looks pretty cool, I like it</li>
+                
+                <li>Github: <a href=https://github.com/VlasnikTvorniceOraha/RayTracingUnity >https://github.com/VlasnikTvorniceOraha/RayTracingUnity</a></li>
+                
+                
+            </ol>
+        </div>
+        <div class="gumb">
+            <h2><a href="/">Return</a></h2>
+        </div>
+    </div>
+    <div class="side right">
+    </div>
+</div>
+
+    </main>
+    <footer>
+    <p>&copy; Jakša Fajs - Portfolio</p>
+</footer>
+</body>
+</html>

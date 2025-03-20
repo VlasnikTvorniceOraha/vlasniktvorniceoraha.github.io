@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>My Portfolio</title>
+</head>
+<body>
+    
+    <main>
+        
+<link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css">
+ <script src="/node_modules/leaflet/dist/leaflet.js"></script>
+
+<div class="main-container">
+    <div class="left-section">
+        <h1>Welcome to My Portfolio</h1>
+        <button id="toggle-view">Switch View</button>
+        <img class="profilna" src=/images/profilnacropped2.jpg alt="Profilna slika">
+        <div class="left-aligned">
+            <p>Jakša Fajs</p>
+            <p>Game &amp; Software developer</p>
+            <p>University of Zagreb</p>
+            <p>FER - Faculty of Electrical Engineering and Computing</p>
+            <div><img src="/images/svg/hrvatska.svg" alt="Link" class="tech-icon">Croatia</div>
+            <div><img src="/images/svg/pin.svg" alt="Link" class="invert-icon">Zagreb</div>
+            <div><img src="/images/svg/link.svg" alt="Link" class="invert-icon"><a href= https://github.com/VlasnikTvorniceOraha>https://github.com/VlasnikTvorniceOraha</a></div>
+            <div><img src="/images/svg/link.svg" alt="Link" class="invert-icon"><a href= https://www.linkedin.com/in/jak%C5%A1a-fajs-3809a431a/>https://www.linkedin.com/in/jakša-fajs-3809a431a/</a></div>
+        </div>
+        <div class="about">
+            <h1><a href="/about">About me</a></h1>
+        </div>
+    </div>
+    <div class="right-section">
+        <div id="map-view">
+            <div id="map"></div>
+        </div>
+        <div id="columns-view">
+            
+            <div class="project" id="stribor">
+                <a href="/projects/stribor/" class="project-content">
+                    <h2 >Stribor</h2>
+                    <p>Simple 3D horror game based on slavic mythology</p>
+                    
+                    <img src="/images/svg/unity.svg" alt="Unity" class="tech-icon">
+                    
+                    <img src="/images/svg/3d.svg" alt="3D" class="tech-icon">
+                    
+                    <img src="/images/svg/hlsl.svg" alt="HLSL" class="tech-icon">
+                    
+                    <img src="/images/svg/csharp.svg" alt="C#" class="tech-icon">
+                    
+                    <img src="/images/svg/blender.svg" alt="Blender" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="raytracing">
+                <a href="/projects/raytracing/" class="project-content">
+                    <h2 >Raytracing in Unity</h2>
+                    <p>Raytracing in Unity with Compute shaders</p>
+                    
+                    <img src="/images/svg/unity.svg" alt="Unity" class="tech-icon">
+                    
+                    <img src="/images/svg/3d.svg" alt="3D" class="tech-icon">
+                    
+                    <img src="/images/svg/csharp.svg" alt="C#" class="tech-icon">
+                    
+                    <img src="/images/svg/hlsl.svg" alt="HLSL" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="ribanje">
+                <a href="/projects/ribanje/" class="project-content">
+                    <h2 >Ribanje</h2>
+                    <p>Short 2D game centered around the Croatian coast</p>
+                    
+                    <img src="/images/svg/unity.svg" alt="Unity" class="tech-icon">
+                    
+                    <img src="/images/svg/2d.svg" alt="2D" class="tech-icon">
+                    
+                    <img src="/images/svg/csharp.svg" alt="C#" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="opengl">
+                <a href="/projects/opengl/" class="project-content">
+                    <h2 >OpenGL projects</h2>
+                    <p>Basic graphical rendering done in OpenGL</p>
+                    
+                    <img src="/images/svg/opengl.svg" alt="OpenGL" class="tech-icon">
+                    
+                    <img src="/images/svg/3d.svg" alt="3D" class="tech-icon">
+                    
+                    <img src="/images/svg/cpp.svg" alt="C++" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="matchmaking">
+                <a href="/projects/matchmaking/" class="project-content">
+                    <h2 >Matchmaking Sim VR</h2>
+                    <p>Elo matchmaking simulation done in VR</p>
+                    
+                    <img src="/images/svg/unity.svg" alt="Unity" class="tech-icon">
+                    
+                    <img src="/images/svg/vr.svg" alt="VR" class="tech-icon">
+                    
+                    <img src="/images/svg/csharp.svg" alt="C#" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="macaklini">
+                <a href="/projects/macaklini/" class="project-content">
+                    <h2 >Macaklini</h2>
+                    <p>Lizards with guns in a 2D arcade multiplayer setting</p>
+                    
+                    <img src="/images/svg/unity.svg" alt="Unity" class="tech-icon">
+                    
+                    <img src="/images/svg/2d.svg" alt="2D" class="tech-icon">
+                    
+                    <img src="/images/svg/csharp.svg" alt="C#" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="portfolio">
+                <a href="/projects/portfolio/" class="project-content">
+                    <h2 >Portfolio</h2>
+                    <p>The page you are on right now</p>
+                    
+                    <img src="/images/svg/js.svg" alt="Javascript" class="tech-icon">
+                    
+                    <img src="/images/svg/nunjucks.svg" alt="Nunjucks" class="tech-icon">
+                    
+                    <img src="/images/svg/eleventy.svg" alt="Eleventy" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="parking">
+                <a href="/projects/parking/" class="project-content">
+                    <h2 >ParKing</h2>
+                    <p>IoT based mobile app for parking</p>
+                    
+                    <img src="/images/svg/flutter.svg" alt="Flutter" class="tech-icon">
+                    
+                    <img src="/images/svg/android.svg" alt="Android" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+            <div class="project" id="jusuf">
+                <a href="/projects/jusuf/" class="project-content">
+                    <h2 >Jusuf&#39;s pyramid</h2>
+                    <p>3D adventure/puzzle game set in a Bosnian pyramid</p>
+                    
+                    <img src="/images/svg/unity.svg" alt="Unity" class="tech-icon">
+                    
+                    <img src="/images/svg/3d.svg" alt="3D" class="tech-icon">
+                    
+                    <img src="/images/svg/csharp.svg" alt="C#" class="tech-icon">
+                    
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script type="module" src="/js/map.js"></script>
+
+    </main>
+    <footer>
+    <p>&copy; Jakša Fajs - Portfolio</p>
+</footer>
+</body>
+</html>
