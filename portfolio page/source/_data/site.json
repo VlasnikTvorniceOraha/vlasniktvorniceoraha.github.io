@@ -1,0 +1,16 @@
+{
+    "name": "Portfolio",
+    "author": "Jakša Fajs",
+    "position": "Game & Software developer",
+    "profilna": "/images/profilnacropped2.jpg",
+    "git": "https://github.com/VlasnikTvorniceOraha",
+    "linkedin": "https://www.linkedin.com/in/jak%C5%A1a-fajs-3809a431a/",
+    "linkedintext": "https://www.linkedin.com/in/jakša-fajs-3809a431a/",
+    "grad": "Zagreb",
+    "drzava": "Croatia",
+    "uni": "University of Zagreb",
+    "faks": "FER - Faculty of Electrical Engineering and Computing",
+    "flickitycss": "https://unpkg.com/flickity@2/dist/flickity.min.css",
+    "flickityjs": "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js",
+    "galleryjs": "/js/gallery.js"
+}

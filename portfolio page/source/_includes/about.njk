@@ -1,0 +1,62 @@
+---
+title: About page
+pageStyle: /css/about.css
+---
+{% extends "base.njk" %}
+{% block content %}
+<div class="main-container">
+    <div class="left-section">
+        <h1>About me</h1>
+        <div class="about-me">
+            <p> 
+                My name is Jakša Fajs. I am a student at the Faculty of Electrical Engineering and Computing (FER) currently on my 5th year. My master is in
+                Computing - Network Science. 
+            </p>
+            <p>
+                I live in Zagreb and like making video games and similar types of applications and software. Most of my projects during
+                my studies were video games made in Unity, 2D, 3D and some in Virtual reality (VR). Besides that I have worked on many other projects for courses in
+                lots of programming languages. These include 3D graphics, image editing, web development, mobile app development, data management, AI and general
+                software and app development.
+            </p>
+            <p>
+                Most of these projects are listed on the main page and the technologies and languages I am proficient in are displayed
+                on this page. Other than that I like swimming, reading and designing video games, history, adventures (D&D and similar stuff) and I dabble in 3D modeling, photoshop and
+                audio editing.
+            </p>
+        </div>
+        <div class="technologies">
+            <div class="languages">
+                <h2>Languages</h2>
+                <ol class="list">
+                    {% for language in languages %}
+                    <li>{{ language.name }}</li>
+                    {% endfor %}
+                </ol>
+            </div>
+            <div class="tools">
+                <h2>Tools</h2>
+                <ol class="list">
+                    {% for tool in tools %}
+                    <li>{{ tool.name }}</li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+        <div class="other">
+            <h2>Other</h2>
+            <ol class="list">
+                {% for othr in other %}
+                <li>{{ othr.name }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="about">
+            <h1><a href="/">Return</a></h1>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="planet">
+        </div>
+    </div>
+</div>
+{% endblock %}
